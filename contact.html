@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Blom --- Front-end developer</title>
+    <title>Sara Blom --- Front-end developer --- About me</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 </head>
 
 <body>
@@ -23,10 +24,25 @@
     </head>
 
     <!--Main-->
-    <main class="home">
-        <h1 class="front-end">Front-end<br>developer</h1>
+    <main class="contact">
+        <h1 class="about">Contact</h1>
 
-        <img src="img/IMG-2297.JPG" alt="Picture of Sara Blom" class="self-portrait">
+        <form action="https://formspree.io/f/mqkgjykq" method="POST" id="form">
+            <article class="contact-form">
+                <label class="label1" for="name">Name</label>
+                <input class="input1" type="text" name="name" id="name" required>
+            
+                <label class="label2" for="email">E-mail</label>
+                <input class="input2" type="email" name="email" id="email" required>
+           
+                <label class="label3" for="message">Message</label>
+                <textarea class="textarea" id="message" name="message" form="form" cols="30" rows="10" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </article>
+ 
+
+        </form>
+
     </main>
 
     <!--Footer-->

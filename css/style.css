@@ -5,7 +5,7 @@
 
 body {
     background-color: #A38B8B;
-    font-family: font-family: 'Arimo', sans-serif;;
+    font-family: 'Arimo', sans-serif;
 }
 
 /*Navbar*/
@@ -37,17 +37,17 @@ nav a:hover {
 
 /*Main*/
 
-main.home {
+main {
     font-family: 'Arimo', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60vh;  
+    grid-template-rows: minmax(auto 60vh);  
     padding: 3rem 3rem 0rem;
 }
 
 /*Main page Home*/
 
-h1.front-end {
+h1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     color: #433F3F;
@@ -57,12 +57,92 @@ h1.front-end {
 }
 
 img.self-portrait {
-    grid-column: 2 / span;
+    grid-column: 2 / 4;
     grid-row: 1 / 2;
     height: 50vh;
     border-radius: 0 2rem;
     opacity: 50%;
 }
+
+/*Main page Experience*/
+main p {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    color: #200E0E;
+    font-size: 20px;
+}
+
+/*Main page Contact*/
+
+main form {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    color: #FDF6F6;
+    /*display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; */
+    }
+
+form .contact-form {
+    margin: 0.4rem 0;
+    display: grid;
+    grid-template-columns: 20vh 40vh;
+    grid-template-rows: 10vh 10vh 20vh 10vh;
+    gap: 0.5rem;
+}
+
+label.label1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+label.label2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+label.label3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+input.input1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+input.input2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+textarea.textarea {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+button.btn {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+form .btn {
+    background: #433F3F;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    color: #FDF6F6;
+    text-transform: uppercase;
+    border: none;
+}
+
+form .btn:hover {
+    color: #433F3F;
+    background-color: #FDF6F6;
+}
+
+/*Footer*/
 
 .social-media {
     display: flex;
