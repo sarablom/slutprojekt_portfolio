@@ -1,0 +1,78 @@
+
+/*General*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: #A38B8B;
+    font-family: font-family: 'Arimo', sans-serif;;
+}
+
+/*Navbar*/
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav a {
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    color: #FDF6F6;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a.home {
+    font-size: 65px;
+}
+
+nav a:hover {
+    background-color: #FDF6F6;
+    color: #A38B8B;
+}
+
+/*Main*/
+
+main.home {
+    font-family: 'Arimo', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60vh;  
+    padding: 3rem 3rem 0rem;
+}
+
+/*Main page Home*/
+
+h1.front-end {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #433F3F;
+    font-size: 65px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img.self-portrait {
+    grid-column: 2 / span;
+    grid-row: 1 / 2;
+    height: 50vh;
+    border-radius: 0 2rem;
+    opacity: 50%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer img {
+    height: 3rem;
+    color: #FDF6F6;
+    padding: 1rem;
+}
