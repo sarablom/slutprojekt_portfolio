@@ -17,6 +17,7 @@ nav.topnav  {
     align-items: center;
     flex-direction: row;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .topnav a {
@@ -56,6 +57,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(auto 60vh);  
     padding: 3rem 3rem 1rem 1rem;
+    gap: 1rem;
 }
 
 /*Main page Home*/
@@ -67,7 +69,16 @@ h1 {
     font-size: 65px;
     justify-content: flex-end;
     align-items: center;
+    animation: slideInFromRight 1s ease-in;
 }
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #433F3F;
+    border-radius: 50%;
+    display: inline-block;
+  }
 
 img.self-portrait {
     grid-column: 2 / 4;
@@ -75,6 +86,8 @@ img.self-portrait {
     height: 50vh;
     border-radius: 0 2rem;
     opacity: 50%;
+    animation: slideInFromLeft 1s ease-in;
+    margin: 2rem 3rem;
 }
 
 /*Main page Experience and About me*/
@@ -83,12 +96,14 @@ main p, section.om-mig {
     grid-row: 1 / 2;
     color: #200E0E;
     font-size: 16px;
+    animation: slideInFromLeft 1s ease-in;
 }
 
 /*Main page Education*/
 
 dl#utbildning {
     list-style-type: none;
+    animation: slideInFromLeft 1s ease-in;
 }
 
 dl#utbildning dt {
@@ -101,6 +116,7 @@ main form {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     color: #FDF6F6;
+    animation: slideInFromLeft 1s ease-in;
     }
 
 form .contact-form {
@@ -108,7 +124,13 @@ form .contact-form {
     display: grid;
     grid-template-columns: 20vh 40vh;
     grid-template-rows: 10vh 10vh 20vh 10vh;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+input, textarea {
+    border : 0px solid #200E0E;
+    border-bottom-width : 1px;
+    background-color : transparent;
 }
 
 label.label1 {
@@ -173,6 +195,29 @@ footer img {
     padding: 1rem;
 }
 
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/*Responsive*/
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
       display: none;
@@ -201,6 +246,12 @@ footer img {
       display: block;
       text-align: left;
     }
+
+    .topnav a.menu-a {
+        width: 100%;
+        padding: 0.1rem;
+        margin: 0;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -211,6 +262,7 @@ footer img {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: minmax(auto 40vh) minmax(auto 40vh);  
     padding: 3rem 3rem 1rem 1rem;
+    gap: 1rem;
 }
 
 h1 {
