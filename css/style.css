@@ -69,7 +69,7 @@ main {
     font-family: 'Arimo', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(auto 60vh);  
+    grid-template-rows: minmax(auto 60vh) minmax(auto 30vh);  
     padding: 3rem 3rem 1rem 1rem;
     gap: 1rem;
     background: #c2a7a7;
@@ -86,7 +86,7 @@ main:after {
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(-4deg);
+    transform: skewY(-3deg);
     transform-origin: 100%;
     z-index: -1;
   } 
@@ -97,7 +97,7 @@ h1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     color: #433F3F;
-    font-size: 65px;
+    font-size: 40px;
     justify-content: flex-end;
     align-items: center;
     animation: slideInFromRight 1s ease-in;
@@ -128,6 +128,20 @@ main p, section.om-mig {
     color: #200E0E;
     font-size: 16px;
     animation: slideInFromLeft 1s ease-in;
+}
+
+.programs {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.programs img {
+    height: 4rem;
+    padding: 0.5rem;
 }
 
 /*Main page Education*/
@@ -266,6 +280,13 @@ footer img {
 
 /*Responsive*/
 
+@media screen and (min-width: 2560px) {
+    main p, section.om-mig {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+  }
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
       display: none;
@@ -308,7 +329,7 @@ footer img {
     font-family: 'Arimo', sans-serif;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: minmax(auto 40vh) minmax(auto 40vh);  
+    grid-template-rows: minmax(auto 40vh) minmax(auto 40vh) minmax(auto 40vh);  
     padding: 3rem 3rem 1rem 1rem;
     gap: 1rem;
 }
@@ -334,6 +355,20 @@ main p, section.om-mig {
     grid-row: 2 / 3;
     color: #200E0E;
     font-size: 16px;
+}
+
+.programs {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.programs img {
+    height: 4rem;
+    padding: 0.5rem;
 }
 
 /*Main page Contact*/
