@@ -32,18 +32,16 @@
             <article class="contact-form">
                 <label class="label1" for="name">Name</label>
                 <input class="input1" type="text" name="name" id="name" required>
-            
+
                 <label class="label2" for="email">E-mail</label>
                 <input class="input2" type="email" name="email" id="email" required>
-           
+
                 <label class="label3" for="message">Message</label>
-                <textarea class="textarea" id="message" name="message" form="form" cols="30" rows="10" required></textarea>
+                <textarea class="textarea" id="message" name="message" form="form" cols="30" rows="10"
+                    required></textarea>
                 <button type="submit" class="btn">Submit</button>
             </article>
- 
-
         </form>
-
     </main>
 
     <!--Footer-->
@@ -59,19 +57,23 @@
                     src="img/linkedin-logo@2x.png" alt="LinkedIn-link"></a>
             <a href="https://www.instagram.com/sarafox.barnklader/" target=”_blank”><img src="img/instagram@2x.png"
                     alt="Instagram-link"></a>
+            <a href="https://open.spotify.com/artist/1Vhr0X4FgDzqk8s33DUWCz?si=_oi5Cq8mSNuOgx3o4DN0HQ"
+                target=”_blank”><img src="img/spotify@2x.png" alt="Spotify-link"></a>
         </div>
     </footer>
 
+    <!--Javascript for navbar-->
+
     <script>
         function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-        </script>
+    </script>
 </body>
 
 </html>
