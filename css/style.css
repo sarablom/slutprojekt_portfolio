@@ -127,7 +127,7 @@ img.self-portrait {
 }
 
 /*Main page Experience and About me*/
-main p, section.om-mig {
+section.erfarenhet, section.om-mig {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     color: var(--dark-text);
