@@ -165,7 +165,7 @@ main form {
     animation: slideInFromLeft 1s ease-in;
     margin: 0.4rem 0;
     display: grid;
-    grid-template-columns: 15vh 40vh;
+    grid-template-columns: 20vw 50vw;
     grid-template-rows: 10vh 10vh 20vh 10vh;
     gap: 1rem;
     }
