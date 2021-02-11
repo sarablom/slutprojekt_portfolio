@@ -165,7 +165,7 @@ main form {
     animation: slideInFromLeft 1s ease-in;
     margin: 0.4rem 0;
     display: grid;
-    grid-template-columns: 20vh 40vh;
+    grid-template-columns: 15vh 40vh;
     grid-template-rows: 10vh 10vh 20vh 10vh;
     gap: 1rem;
     }
@@ -314,7 +314,7 @@ footer img {
     .topnav.responsive a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: right;
     }
 
     .topnav a.menu-a {
