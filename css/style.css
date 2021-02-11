@@ -133,6 +133,7 @@ main p, section.om-mig {
     color: var(--dark-text);
     font-size: 16px;
     animation: slideInFromLeft 1s ease-in;
+    text-align: justify;
 }
 
 .programs {
