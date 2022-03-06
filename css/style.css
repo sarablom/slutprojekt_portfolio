@@ -134,6 +134,7 @@ section.erfarenhet, section.om-mig {
     font-size: 16px;
     animation: slideInFromLeft 1s ease-in;
     text-align: justify;
+    max-width: 90vw;
 }
 
 .programs {
