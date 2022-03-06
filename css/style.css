@@ -151,6 +151,25 @@ section.erfarenhet, section.om-mig {
     padding: 0.5rem;
 }
 
+/* Main page projects */
+
+#project1, #project2 {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+a.project-link {
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+a.project-link:hover {
+    text-decoration: underline;
+}
+
+.white {
+    background-color: var(--white-text);
+}
+
 /*Main page Education*/
 
 dl#utbildning {
@@ -379,7 +398,7 @@ main p, section.om-mig, section.erfarenhet {
     padding: 0.5rem;
 }
 
-/*Main page Contact*/
+/* Main page Contact
 
 form .contact-form, main.contact {
     margin: 0.4rem 0;
@@ -406,7 +425,7 @@ button.btn {
     margin: 0.5rem 0;
     border-radius: 4px;
     max-width: 80%;
-}
+} */
 
 footer {
     display: grid;
